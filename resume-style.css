@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "drake-pic name"
+    "job-title standard-info"
+    "contact-info accomplishments"
+    "contact-info before-rap";
+  column-gap: 1em;
+  row-gap: 2em;
+  background-color: tan;
+  justify-content: center;
+}
+
+#drake-pic {
+  grid-area: drake-pic;
+  /* background-color: blueviolet; */
+}
+
+#name {
+  grid-area: name;
+  /* background-color: green; */
+  font-size: 50px;
+  color: blueviolet;
+  border-bottom: 2px solid gray;
+}
+
+#job-title {
+  grid-area: job-title;
+  /* background-color: blue; */
+}
+
+#standard-info {
+  grid-area: standard-info;
+  /* background-color: orange; */
+  font-size: 20px;
+}
+
+#contact-info {
+  grid-area: contact-info;
+  background-color: blueviolet;
+  color: white;
+  /* line-height: 40px; */
+}
+
+#contact-info li {
+  line-height: 30px;
+}
+
+#accomplishments {
+  grid-area: accomplishments;
+  /* background-color: yellowgreen; */
+  line-height: 20px;
+}
+
+#before-rap {
+  grid-area: before-rap;
+  /* background-color: aqua; */
+}
+
+ul {
+  font-size: 15px;
+  margin-left: 17px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+h2 {
+  border-bottom: 2px solid grey;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
